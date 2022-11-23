@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td { text-align: center;}
+    </style>
+</head>
+<body style="margin-left: 40px; margin-top: 40px; ">
+    <h3>테이블태그</h3>
+    <hr>
+    <table border="8">
+        <thead>  <!-- 생략가능 -->
+            <tr>
+                <th></th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>   <!-- 생략가능 -->
+            <tr>
+             <td>1교시</td>
+             <td rowspan="2">국어</td>
+             <td>수학</td>
+             <td>영어</td>
+             <td colspan="2">미술</td>
+             <!-- <td>체육</td> -->
+            </tr>
+            <tr>
+                <td>2교시</td>
+                <!-- <td>영어</td> -->
+                <td>수학</td>
+                <td>과학</td>
+                <td>음악</td>
+                <td>사회</td>
+               </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table border="3">
+        <tr>
+           <td>이름</td>
+           <td>안지혜</td>
+          <td rowspan="3">&nbsp;사&nbsp;진&nbsp;</td>
+        </tr>
+        <tr>
+            <td>번호</td>
+            <td>010-1234-2324</td> 
+         </tr>
+         <tr>
+            <td>email</td>
+            <td>ppjava12@gmail.com</td>
+           
+         </tr>
+         <tr>
+            <td>주소</td>
+            <td colspan="2">서울특별시 강남구 도곡동</td>
+            
+         </tr>
+    </table>
+</body>
+</html>
