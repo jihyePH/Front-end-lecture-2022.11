@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 양식</title>
+</head>
+<body style="margin-left: 40px; margin-top: 40px;">
+    <h3>입력 양식</h3>
+    <hr>
+    <!-- submit 버튼 누르면 입력된 값을 
+        action에서 정한 위치, method에서 정한 방법으로 서버에게 전송 -->
+        <!-- name에서 정한값은 서버에서 입력값을 받을때 key값으로 사용 -->
+    <form action="" method="post" enctype="multipart/form-data">
+        <table border="2">
+            <tr>
+                <td>text</td>
+                <td> <input type="text" name="a" id="a"></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input type="text" name="b" id=""></td>
+            </tr>
+            <tr>
+                <td>hidden</td> <!-- update시 사용 -->
+                <td> <input type="hidden" name="id" value="primary key"></td>
+            </tr>
+            <tr>
+                <td>체크박스</td>
+                <td>
+                    <input type="checkbox" name="c" id="id1" value="1">
+                        <label for="id1">사과</label> 
+                    <input type="checkbox" name="c" id="id2" value="2">
+                        <label for="id1">포도</label> 
+                    <input type="checkbox" name="c" id="id3" value="3">
+                        <label for="id1">참외</label> 
+                    <input type="checkbox" name="c" id="id4" value="4">
+                        <label for="id1">수박</label> 
+                </td>
+            </tr>
+            <tr>
+                <td>select</td>
+                <td>
+                    <select name="d" id="">
+                        <option value="1">김밥</option>
+                        <option value="2">떡볶이</option>
+                        <option value="3">순대</option>
+                        <option value="4">튀김</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>multi-select</td>
+                <td>
+                    <select name="d" id="" multiple>
+                        <option value="1">김밥</option>
+                        <option value="2">떡볶이</option>
+                        <option value="3">순대</option>
+                        <option value="4">튀김</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>radio</td>
+                <td>
+                    <input type="radio" name="f" id="" value="male">남자
+                    <input type="radio" name="f" id="" value="female">여자
+                </td>
+            </tr>
+            <tr>
+                <td>Text area</td>
+                <td><textarea name="g" id="" cols="40" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>파일</td>
+                <td><input type="file" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>버튼</td>
+                <td> <input type="button" value="버튼" onclick="alter('버튼클릭함')">
+                <button type="submit">제출</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="확인">
+                    <input type="reset" value="입력값 취소">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        let pwd = document.getElementById('pwd');
+    </script>
+</body>
+</html>
