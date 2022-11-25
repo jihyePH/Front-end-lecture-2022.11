@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹 패턴</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body { width: 960px; margin: 0auto; overflow: hidden;}
+        #menu { width: 260px; overflow: left;}
+        #section{width: 700px; float: right;}
+        li{list-style: none; color: red;}
+        @media screen and (max-width:767px) {
+            body{width: auto;}
+            #menu {width: auto; float: none;}
+            #section{width: auto; float: none;}
+            li {list-style: none ; color: blue;}
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li>menu A</li>
+            <li>menu B</li>
+            <li>menu C</li>
+        </ul>
+    </div>
+    <div id="section">
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, debitis.</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque velit expedita, repellendus id accusamus dicta perferendis dolorum non itaque temporibus similique ipsam in quis culpa! Doloremque animi aspernatur, numquam tenetur dolor quibusdam quia quo ipsam ullam placeat, at repudiandae consectetur nam obcaecati cum perferendis voluptate ad officia modi, unde exercitationem? Ut quaerat deserunt non vitae debitis, nihil quam perferendis nemo asperiores incidunt iusto soluta delectus error nostrum quos, quia libero itaque reprehenderit in nulla! Exercitationem fugiat neque dolorem quod necessitatibus? Molestias maiores quaerat, voluptatem at quam quos nihil, facere modi, rem aliquid enim sint ratione exercitationem! Odit tempore quaerat ipsum.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형</title>
+    <style>
+        h1 { color: blue;}
+        body {background-color: aquamarine;}
+
+        @media screen and (max-width: 960px) {    /* 태블릿 */
+            h1 {color: green;}
+            body{background-color: greenyellow;}
+        }
+        @media screen and (max-width: 768px) {    /* 스마트폰 */
+            h1 {color: red;}
+            body{background-color: coral;}
+        }
+
+        @media print {          /* 프린터 */
+            body {background-color: beige;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, tenetur?</h1> 
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A id laudantium eum doloribus neque aspernatur officiis iusto necessitatibus sed impedit. Delectus, aperiam consequatur. Expedita recusandae voluptates officiis illum accusamus atque animi hic, possimus nobis odio eos sequi molestiae explicabo minima laborum? Deserunt mollitia quibusdam nostrum obcaecati commodi ab fugiat incidunt voluptate quia error! Laborum vel explicabo cupiditate minima? Optio porro dolorem labore, numquam praesentium explicabo? Pariatur enim perferendis reprehenderit quisquam praesentium atque placeat eum nostrum provident commodi necessitatibus cumque ipsam, nulla laboriosam at saepe recusandae suscipit sint sed beatae numquam soluta voluptas? Alias deleniti et fugit ea, sapiente labore eius!</p>
+</body>
+</html>
