@@ -1,5 +1,5 @@
 // 지뢰 찾기 
-let N = 10;      //row, col 이 8
+let N = 8;      //row, col 이 8
 let mines = [];
 
 //Step 1. 초기 지뢰밭 만들기 
