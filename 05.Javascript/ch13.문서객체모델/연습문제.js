@@ -15,3 +15,18 @@ function answer1(){
     resNode.innerHTML = '결과: ' + powerArray;
     resNode.style.color = 'blue';
 }
+
+function answer2(){
+    let textNode = document.getElementById('text1')
+    let text1  = textNode.value;
+    const noP
+}
+
+function answer3(){
+    const priceStr = document.getElementById('price').value;
+    let pricesArr = priceStr.split(';');
+    let prices = pricesStrArr.map(x => parseInt(x));
+    /* let prices= [];
+    for (let str of priceStrArr)
+        prices.push(parseInt(str)); 
+}
